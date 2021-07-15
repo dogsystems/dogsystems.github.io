@@ -1,0 +1,28 @@
+.tools ul {
+    width: 100%;
+    height: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+
+}
+.tools li {
+    padding-left: 10px ;
+    float: left;
+}
+.tools li a {
+    font-size: 50px;
+    color: #FFFF;
+    text-align: center;
+    text-decoration: none;
+}
+.tools li a:hover {
+    background-color: #111111;
+}
+.main {
+        width: 100%;
+        text-align:center;
+}
