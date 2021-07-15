@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" class="index">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,17 @@
     <li><a href="#">test</a></li>
 </ul>
     </div>
-    <div class="main">
-    <input type="search" placeholder="Prohledejte Dognet!" autocomplete="off" required>
+    <div class="search">
+    <form onsubmit="search()">
+    <input type="search" id="search" placeholder="Prohledejte Dognet!" autocomplete="off" required>
+    <button type="submit">Vyhledat</button>
+    </form>
     </div>
+    <script>
+function search(){
+var squery = document.getElementById('search').value;
+location.href = "/search.html" + "?" + squery;
+}
+    </script>
 </body>
 </html>
